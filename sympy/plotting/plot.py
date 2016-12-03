@@ -28,6 +28,7 @@ import inspect
 from collections import Callable
 import warnings
 import sys
+import PygletPlot
 
 from sympy import sympify, Expr, Tuple, Dummy, Symbol
 from sympy.external import import_module
@@ -1072,6 +1073,7 @@ class DefaultBackend(BaseBackend):
 plot_backends = {
     'matplotlib': MatplotlibBackend,
     'text': TextBackend,
+    'pyglet': PygletPlot,
     'default': DefaultBackend
 }
 
